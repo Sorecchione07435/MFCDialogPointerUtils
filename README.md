@@ -1,1 +1,1 @@
-# MFCDialogPointerUtils
+# MFC Dialog Pointer Utils
