@@ -6,4 +6,13 @@ This is a static library that can be included in any Visual C++ Win32 project es
 
 ## Library Installation Guide
 
-First of all download all the source code files from this repository as a ZIP file
+1) First of all download all the source code files from this repository as a ZIP file
+
+2) After downloading the ZIP file extract it to any location
+3)  Go to your project properties and add the directory where you extracted the ZIP file and add it as an additional include directory
+
+   ```Configuration Properties -> C/C++ -> Additional Include Directories```
+![Immagine 2024-08-12 095509](https://github.com/user-attachments/assets/56aa3015-b48f-495e-b62a-d5afaed4b231)
+
+4) Now as a last thing you need to specify the location of the library file to the linker
+   This time just go to: ```Configuration Properties -> Linker -> Input```
