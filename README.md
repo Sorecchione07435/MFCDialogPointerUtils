@@ -21,7 +21,7 @@ This is a static library that can be included in any Visual C++ Win32 project es
    
 **The .lib path is Debug\DialogPointerUtils.lib**
    
-This time just go to: ```Configuration Properties -> Linker -> Input``` and copy the library file path and set it
+This time just go to: ```Configuration Properties -> Linker -> Input -> Additional Dependecies``` and copy the library file path and set it
 
 ![Immagine 2024-08-12 100257](https://github.com/user-attachments/assets/d4d704be-9882-480f-a04c-ac8a5b3a2710)
 
