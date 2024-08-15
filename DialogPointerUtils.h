@@ -22,4 +22,8 @@ public:
 	CString GetDlgCtrlTextA(CDialogEx* pDlg, int controlID);
 	void SetDlgCtrlTextA(CDialogEx* pDlg, int controlID, CString text);
 
+	int GetDlgCtrlInt(CDialogEx* pDlg, int controlID);
+	double GetDlgCtrlDouble(CDialogEx* pDlg, int controlID);
+	float GetDlgCtrlFloat(CDialogEx* pDlg, int controlID);
+
 };

@@ -92,3 +92,34 @@ void DialogPointerUtils::SetDlgCtrlTextA(CDialogEx* pDlg, int controlID, CString
 	CWnd* pControl = (CWnd*)pDlg->GetDlgItem(controlID);
 	pControl->SetWindowTextA(text);
 }
+
+
+int DialogPointerUtils::GetDlgCtrlInt(CDialogEx * pDlg, int controlID)
+{
+	int value;
+	CString currentText;
+	CWnd* pControl = (CWnd*)pDlg->GetDlgItem(controlID);
+	pControl->GetWindowTextA(currentText);
+	value = _ttoi(currentText);
+	return value;
+}
+
+double DialogPointerUtils::GetDlgCtrlDouble(CDialogEx * pDlg, int controlID)
+{
+	double value;
+	CString currentText;
+	CWnd* pControl = (CWnd*)pDlg->GetDlgItem(controlID);
+	pControl->GetWindowTextA(currentText);
+	value = _ttof(currentText);
+	return value;
+}
+
+float DialogPointerUtils::GetDlgCtrlFloat(CDialogEx * pDlg, int controlID)
+{
+	float value;
+	CString currentText;
+	CWnd* pControl = (CWnd*)pDlg->GetDlgItem(controlID);
+	pControl->GetWindowTextA(currentText);
+	value = static_cast<float>(_ttof(currentText));
+	return value;
+}
