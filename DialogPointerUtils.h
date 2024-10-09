@@ -2,6 +2,22 @@
 #include "afxwin.h"
 #include "afxdialogex.h"
 
+#ifndef _MBCS
+	#error "To use this library, enable the multibyte character set"
+#endif
+
+#ifndef _AFXDLL
+	#error "To use this library you need the MFC shared dll version"
+#endif
+
+#if !defined(NDEBUG)
+	#error "This library only works in Release and not in Debug, to use it switch to Release"
+#endif
+
+#if !defined(_WIN64)
+	#error "This library is not 32-bit compatible, please switch your project to 64-bit to use it"
+#endif
+
 class DialogPointerUtils
 {
 public:

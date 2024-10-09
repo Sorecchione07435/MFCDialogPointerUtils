@@ -84,6 +84,7 @@ CString DialogPointerUtils::GetDlgCtrlTextA(CDialogEx* pDlg, int controlID)
 	CString text;
 	CWnd* pControl = (CWnd*)pDlg->GetDlgItem(controlID);
 	pControl->GetWindowTextA(text);
+
 	return text;
 }
 
