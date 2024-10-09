@@ -4,6 +4,8 @@ DialogPointerUtils is a library that allows you to manage almost any MFC control
 
 This is a static library that can be included in any Visual C++ Win32 project especially in a dialog box
 
+**Warning: This library only works in Release**
+
 ## Library Installation Guide
 1. **Download source files**: Download all source files from this repository as a ZIP file.
    
@@ -12,18 +14,18 @@ This is a static library that can be included in any Visual C++ Win32 project es
 3. **Configure project properties**: Go to your project properties and add the directory where you extracted the ZIP file as an additional include directory.
    
    ```Configuration Properties -> C/C++ -> Additional Include Directories```
-![Immagine 2024-08-12 095509](https://github.com/user-attachments/assets/56aa3015-b48f-495e-b62a-d5afaed4b231)
-![Immagine 2024-08-12 095938](https://github.com/user-attachments/assets/0942cef7-5ab8-4ee8-a352-77eda2c0ff75)
+![screenshot1](https://github.com/user-attachments/assets/315c7f20-040e-46e9-9183-173c4916912c)
+
 
 4) Now as a last thing you need to specify the location of the library file to the linker
    
-**(The .lib file is located in the debug folder, the library is already compiled and ready to use, so there is no need to compile anything)**
+**The lib file is both 32 and 64 bit, choose the architecture of the application you are developing**
    
-**The .lib path is Debug\DialogPointerUtils.lib**
+**The .lib path is lib\x86 or lib\x64**
    
 This time just go to: ```Configuration Properties -> Linker -> Input -> Additional Dependecies``` and copy the library file path and set it
 
-![Immagine 2024-08-12 100257](https://github.com/user-attachments/assets/d4d704be-9882-480f-a04c-ac8a5b3a2710)
+![screenshot2](https://github.com/user-attachments/assets/d5bdc0ef-ea8f-4e85-9c3d-cc029f6f0d3f)
 
 Now click on OK then on "Apply" and OK again and we will have correctly imported the library into our project
 
